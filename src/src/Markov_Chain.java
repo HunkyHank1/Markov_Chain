@@ -33,5 +33,20 @@ public boolean fileRead(){
     }
     return sucess;
 }
+public void makeHashtable(){
+    String prefix = "";
+    String suffix = "";
+    for(int i = 0;i<allWords.length();i++){
+        if(allWords.charAt(i)==' '){
+            d.put(prefix, suffix);
+        }
+        else if(allWords.charAt(i)=='.'||allWords.charAt(i)=='!'||allWords.charAt(i)=='?'){
+
+        }
+        else{
+            prefix+= allWords.charAt(i);
+        }
+    }
+}
 
 }
